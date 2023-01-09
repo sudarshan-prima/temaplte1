@@ -1,0 +1,40 @@
+@import "../../style/themes";
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.btn_solid {
+    background: $pri ;
+    color: $coolBlack ;
+}
+
+.btn_outline {
+    padding: 10px;
+    background: $white ;
+    border: 1px solid $pri;
+    border-radius: 8px;
+    color: $pri;
+}
+
+.btn_small {
+    width: 133px;
+    height: 28px;
+}
+
+.btn_medium {
+    width: 152px;
+    height: 40px;
+}
+
+.btn_large {
+    width: 157px;
+    height: 54px;
+}
