@@ -1,0 +1,134 @@
+@import "../../style/themes";
+
+.text__heading_xxl {
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: -0.201rem;
+    color: $black;
+    font-weight: 700;
+}
+
+.text__heading_xl {
+    font-size: 4rem;
+    line-height: 4.9rem;
+    letter-spacing: -0.126rem;
+    color: $black;
+    font-weight: 700;
+}
+
+.text__heading_lg {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.text__heading_md {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    letter-spacing: -0.1rem;
+    font-weight: 500;
+
+    @include respond("mobile") {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+// @mixin text__heading_sm() {
+.text__heading_sm {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.1rem;
+    font-weight: 500;
+
+    @include respond("mobile") {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+}
+
+.text__subheading_lg {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.text__subheading_md {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.text__subheading_sm {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.text__title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.text__body {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+}
+
+.text__label_lg {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+.text__label_md {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: $pri;
+    font-weight: 400;
+}
+
+.text__label_sm {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: $pri;
+    font-weight: 400;
+}
+
+@for $i from 1 through 7 {
+    .text__#{$i * 100} {
+        font-weight: #{$i * 100};
+    }
+}
+
+.text__white {
+    color: $white;
+}
+
+.text__black {
+    color: $black;
+}
+
+.text__cool_black {
+    color: $coolBlack;
+}
+
+.text__primary {
+    color: $pri;
+}
+
+.text__secondary {
+    color: $sec;
+}
+
+.text__tertiary {
+    color: $tri;
+}
+
+.text__grey {
+    color: $grey;
+}
+
+.text__roboto {
+    font-family: 'Roboto', sans-serif;
+}
